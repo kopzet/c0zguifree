@@ -52,13 +52,11 @@ local function newButton(text)
     return btn
 end
 
--- Фиктивные кнопки
 local speedBtn = newButton("Speed")
 local flyBtn = newButton("Fly")
 local noclipBtn = newButton("NoClip")
 local espBtn = newButton("ESP")
 
--- Сообщение про обновление
 local updateLabel = Instance.new("TextLabel")
 updateLabel.Size = UDim2.new(1, 0, 0, 20)
 updateLabel.Position = UDim2.new(0, 0, 1, -25)
@@ -69,19 +67,22 @@ updateLabel.BackgroundTransparency = 1
 updateLabel.Text = "A Dumper update is required"
 updateLabel.Parent = frame
 
--- Заглушки функций
+-- Требуется обновление Дампера
 speedBtn.MouseButton1Click:Connect(function()
     speedBtn.Text = "Speed"
 end)
 
+-- Требуется обновление Дампера
 flyBtn.MouseButton1Click:Connect(function()
     flyBtn.Text = "Fly"
 end)
 
+-- Требуется обновление Дампера
 noclipBtn.MouseButton1Click:Connect(function()
     noclipBtn.Text = "NoClip"
 end)
 
+-- Требуется обновление Дампера
 espBtn.MouseButton1Click:Connect(function()
     espBtn.Text = "ESP"
 end)
